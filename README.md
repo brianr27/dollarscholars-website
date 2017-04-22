@@ -1,2 +1,2 @@
-# paystack-website
-Repo for Paystack website
+# dollarscholars-website
+Repo for dollarscholars website
