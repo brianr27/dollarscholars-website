@@ -35,7 +35,7 @@
                                 <a href="careers.html">Careers</a>
                             </li>
                             <li class="global-dropdown-menu__item">
-                                <a href="blog.html">Blog</a>
+                                <a href="https://blog.dollar-scholars.com">Blog</a>
                             </li>
                         </ul>
                     </li>
@@ -48,21 +48,38 @@
             </div>
         </div>
     </nav>
-    <section class="hero-section">
-    	<div class=hero-section__content">
-            <div class="global-u-text-center">
-                <br><br><br><br><br>
-                <h5>Dollar Scholars In Session</h5>
-                <img src="images/class/insession.jpg" height="450">
-                <h2 class="hero-section__secondary-title">Dollar Scholars is a small and vibrant <br> family working with schools kids across New England.</h2>
+<section class="hero-section hero-section--company">
+    <div class="hero-video">
+        <div class="hero-video__annotation">
+            <div class="hero-video__annotation__left">
+                <h5>Paystack HQ</h5>
+                <h6>Dec 15</h6>
+            </div>
+            <div class="hero-video__annotation__right">
+                <div id="hero-video__spinner" class="spinner" style="display: none;"><span></span></div>
             </div>
         </div>
-    </section>
+        <div class="hero-video__image-backup"></div>
+        <div class="hero-video__file-wrap">
+            <video class="hero-video__file" autoplay id="hero-video__file" muted>
+                <source src="https://paystack.com/assets/website/video/HQ.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-video__logo fade-in">
+            <img src="https://paystack.com/assets/website/images/logo_icon.svg">
+        </div>
+    </div>
+    <div class="hero-section__content">
+        <div class="global-u-text-center">
+            <h2 class="hero-section__secondary-title">Paystack is a small and vibrant <br> family working across Lagos and <br> San Francisco.</h2>
+        </div>
+    </div>
+</section>
     <section class="company-section company-section--story">
         <div class="container">
             <div class="grid">
                 <div class="grid__column grid__column--4">
-                    <h2 class="company-section-header__heavy-title">Why dollar<br> scholars?</h2>
+                    <h2 class="company-section-header__heavy-title">Why <br> dollar scholars?</h2>
                 </div>
                 <div class="grid__column grid__column--8">
                     <h4 class="company-section-header__secondary-title">
@@ -79,24 +96,24 @@ The goal of Dollar Scholars is to prepare our kids for the many financial decisi
             <div class="grid">
                 <div class="grid__column grid__column-- grid__column--centered">
                     <div class="company-section-header company-section-header--centered">
-                        <h2 class="company-section-header__primary-title">The Founders</h2>
+                        <h2 class="company-section-header__primary-title">The Teachers</h2>
                         <h4 class="company-section-header__secondary-title">Passionate about teaching kids and introducing them to saving, entrepreneurship and setting long term financial goals.</h4>
                     </div>
                 </div>
             </div>
             <div class="team-members grid">
-                <div class="grid__column grid__column grid__column--7">
+                <div class="grid__column grid__column--20 grid__column--6-s">
                     <div class="team-member">
                         <div class="team-member__image" style="background-image: url(images/team/lisacaperna.jpg)"></div>
                         <div class="team-member__name">Lisa Caperna</div>
-                        <div class="team-member__role">Teacher</div>
+                        <div class="team-member__role">Teacher and Founder</div>
                     </div>
                 </div>
-                <div class="grid__column grid__column grid__column--3">
+                <div class="grid__column grid__column--20 grid__column--6-s">
                     <div class="team-member">
                         <div class="team-member__image" style="background-image: url(images/team/patriciawhite.jpg)"></div>
                         <div class="team-member__name">Patricia White</div>
-                        <div class="team-member__role">Teacher</div>
+                        <div class="team-member__role">Teacher and Founder</div>
                     </div>
                 </div>
             </div>
@@ -110,7 +127,7 @@ The goal of Dollar Scholars is to prepare our kids for the many financial decisi
                         Join Us. 
                     </h2>
                     <h3 class="global-signup__secondary-title">
-                        We're always looking to recruit vibrant talented teachers. Just check our openings.
+                        We're always looking to recruit young, diverse and vibrant talent. Just check our openings.
                     </h3>
                     <ul class="global-signup__call-to-action">
                         <li class="global-signup__button">
@@ -124,14 +141,13 @@ The goal of Dollar Scholars is to prepare our kids for the many financial decisi
     <footer class="global-footer">
         <div class="container">
             <div class="global-footer__grid grid">
-                <div class="grid__column grid__column--2 grid__column--centered">
-                    <h4 class="global-footer__menu-header">Boston</h4>
-                    <p class="global-footer__address"> 24 Lockwood Rd, Newton, MA 02465.</p>
-                    <div class="grid__column grid__column--2-s" style="display: inline">
-		        <a href="mailto:info@dollar-scholars.com">info@dollar&#8209scholars.com</a>
-		 	<br>
-		 	<br>
-                        <a href="terms.html">Privacy & Terms</a>
+                <div class="grid__column grid__column--6">
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">Boston</h4>
+                        <p class="global-footer__address"> 24 Lockwood Rd, Newton, MA 02465.</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a href="" class="global-footer__contact">info@dollar-scholars.com</a>
                     </div>
                 </div>
                 <div class="grid__column grid__column--12">
@@ -141,4 +157,23 @@ The goal of Dollar Scholars is to prepare our kids for the many financial decisi
         </div>
     </footer>
 </body>
+<script>
+var heroVideo = document.getElementById("hero-video__file");
+
+heroVideo.oncanplay = function() {
+    document.getElementById("hero-video__spinner").style.display = "";
+}
+
+heroVideo.onplay = function() {
+    var oldSpinner = document.getElementById("hero-video__spinner");
+    var newSpinner = document.getElementById("hero-video__spinner").cloneNode(true);
+    oldSpinner.parentNode.replaceChild(newSpinner, oldSpinner);
+}
+
+heroVideo.addEventListener("ended", function() {
+    this.play();
+}, false);
+</script>
+
 </html>
+
