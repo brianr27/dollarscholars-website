@@ -154,5 +154,30 @@ The goal of Dollar Scholars is to prepare our kids for the many financial decisi
             </div>
         </div>
     </footer>
+    <noscript>
+        <style type="text/css">
+        .slide--three {
+            display: block;
+        }
+        </style>
+    </noscript>
+    <script src="js/vendor/animate.min.js"></script>
+    <script src="js/home-animation.js"></script>
+    <script>
+    var mobileMenuHidden = true;
+    var trigger = document.getElementById('mobile-nav-trigger');
+    var menu = document.getElementById('mobile-nav-menu');
+
+    trigger.addEventListener("click", function() {
+        if (mobileMenuHidden) {
+            trigger.classList.add("is-active");
+            menu.style.display = "block";
+        } else {
+            trigger.classList.remove("is-active");
+            menu.style.display = "none";
+        }
+        mobileMenuHidden = !mobileMenuHidden;
+    });
+    </script>
 </body>
 </html>
